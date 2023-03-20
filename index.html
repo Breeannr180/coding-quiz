@@ -5,70 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Assets/style.css">
 </head>
 <h1>Coding Quiz</h1>
 
 <body>
     <header>
         <div class="scores">
-            <a id="highscores">View high scores</a>
+            <a id="highscores-link">View high scores</a>
         </div>
-
-        <div id=timer class="timer">
-            time: 10
+        <div id="timer" class="timer">
+            Time: 60
         </div>
     </header>
+
     <section id="start-container" class="start-quiz">
-        <h1>Welcome</h1>
-        <p>Test yout skills!</p>
+        <h1>Welcome to the Coding Quiz Challenge</h1>
+        <p>
+           Test your skills! Click start when you are ready.
+        </p>
         <div class="controls">
             <button id="start-btn" class="start-btn">Start Quiz</button>
         </div>
     </section>
 
     <section id="question-container" class="hide">
-            <h1 id="question">Question</h1>
-            <div id="answer-buttons" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
-                    <button class="btn">Answer 5</button>
-                </div>
-                <h2 id="check-answer" class="correct-wrong hide"></h2>
-                <div class="controls">
-                    <button id="next-btn" class="next-btn hide">Next</button>
-                </div>
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+        </div>
+        <h2 id="check-answer" class="correct-wrong hide"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide">Next</button>
+        </div>
+    </section>
 
-                <section id="scores" class=hide>
-                    <form id="submit-form">
-                        <h3 id="your-score"></h3>
-                        <label id="initials-label">Enter your initials to save the score:</label>
-                        <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
-                        <button id="submit-btn">Submit</button>
-                    </form>
-                </section>
-                <section id="highscores" class="highscores-container hide">
-                    <div id="high-scores">
-                        <h1 class="centered">Leaderboard</h1>
-                        <div id="highscore" class="highscore highscore-list">
-                        </div>
-                        <div class="controls">
-                            <button id="restart-btn">Restart</button>
-                            <button id="clear-btn">Clear Scores</button>
-                        </div>
-                    </div>
-                </section>
+    <section id="score-container" class="hide">
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+            <label id="initials-label">Enter your initials to save the score:</label>
+            <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
+            <button id="submit-btn">Submit</button>
+        </form>
+    </section>
 
-
-                <script src="./assets/questions.js"></script>
-                <script src="./assets/script.js"></script>
+    <section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+            <h1 class="centered">Leaderboard</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="clear-btn">Clear Scores</button>
+            </div>
+        </div>
+        
+    </section>
+    <script src="./assets/script.js"></script>
 </body>
 
-</html>
-</head>
-<body>
-    
-</body>
 </html>

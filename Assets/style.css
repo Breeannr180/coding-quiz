@@ -1,0 +1,142 @@
+
+ 
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .centered {
+    text-align: center;
+  }
+  
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0;
+    font-size: 30px;
+  
+  }
+  
+  .scores a,
+  .timer {
+    font-size: 15px;
+  }
+  
+  .scores a {
+    color: #4cb2c9;
+    cursor: pointer;
+  }
+  
+  .scores a:hover {
+    color:  #aaaaaa;
+  }
+  
+  
+  .start-quiz {
+    text-align: center;
+  }
+  /* Buttons */
+  .btn {
+    display:grid; 
+    text-align: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: auto;
+    overflow: visible;
+    padding: 10px;
+    background-color: #e3b2d9;
+    border-radius: 10px;
+    font-size: large;
+    margin: 10px;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(127, 226, 226);
+  }
+  
+  
+  h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  h2 {
+    color:  #aaaaaa;
+    border-top: 1px solid black;
+    margin: 20px 0;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  
+  .hide {
+    display: none;
+  }
+  
+  .btn.correct {
+    background-color: rgb(164, 227, 227);
+  }
+  
+  .btn.wrong {
+    background-color: #e3b2d9;
+  }
+  
+  /* Wrapper for buttons */
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  /* Enter your initial */
+  input[type="text"] {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Highscores Page */
+  .highscore {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .name-div,
+  .score-div {
+    flex: 1 35%;
+    padding: 10px 0;
+    border: 1px solid #2f07f5;
+  }
+  
+  /*** MEDIA QUERY FOR MOBILE PHONES AND SMALLER ***/
+  /* this will be applied on any screen smaller than 575px */
+  @media screen and (max-width: 575px) {
+    .btn-grid {
+      text-align: center;
+      gap: 0;
+      margin: 0;
+    }
+  }
+  
+  
+  
