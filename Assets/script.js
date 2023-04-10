@@ -20,7 +20,7 @@ var scores = JSON.parse(localStorage.getItem("scores")) || [];
 var shuffledQuestions, currentQuestionIndex;
 
 
-// Start button trigger the first question and next button to display
+// Start button triggers first question 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++
@@ -51,7 +51,7 @@ function startGame() {
 };
 
 
-// Go to next question
+// Next question
 function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -72,7 +72,7 @@ function showQuestion(question) {
         answerButtonsEl.appendChild(button)
     })
 };
-// Questions and answers
+// Questions with answers
 var questions = [
     {
         question: "Commonly used data types do not include;",
@@ -126,7 +126,7 @@ var questions = [
 ];
 
 
-// Reset state function
+// Reset function
 function resetState() {
     //clearStatusClass(document.body)
     nextButton.classList.add("hide")
@@ -138,7 +138,7 @@ function resetState() {
 };
 
 
-// Select answer function
+// Select answer 
 function selectAnswer(e) {
     var selectedButton = e.target;
     //console.dir(selectedButton);
@@ -182,7 +182,7 @@ function setStatusClass(element, correct) {
 };
 
 
-// Remove all the classes
+// Remove classes
 function clearStatusClass(element) {
     element.classList.remove("correct");
     element.classList.remove("wrong");
@@ -270,7 +270,7 @@ submitButton.addEventListener("click", function (event) {
 });
 
 
-// Restart or reload the page
+// Restart or reload 
 restartButton.addEventListener("click", function () {
     window.location.reload();
 });
