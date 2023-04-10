@@ -97,7 +97,7 @@ h2 {
 }
 
 /* Wrapper for buttons */
-.controls {
+.buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +120,6 @@ input[type="text"] {
   text-align: center;
 }
 
-.name-div,
 .score-div {
   flex: 1 35%;
   padding: 10px 0;
