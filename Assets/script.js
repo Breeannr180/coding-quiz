@@ -95,7 +95,7 @@ var questions = [
     {
         question: "What does CSS stand for?",
         answers: [
-            { text: "creative style sheeets", correct: false },
+            { text: "creative style sheets", correct: false },
             { text: "computer style sheets", correct: false },
             { text: "cascading style sheets", correct: true },
             { text: "None of the above", correct: false },
