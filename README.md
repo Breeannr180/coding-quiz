@@ -9,13 +9,12 @@ This project was created to test someone's basic web development language unders
 A person can take this timed coding quiz and keep a running tally of their scores while also seeing the correct response to each question. To use the quiz, follow the link and click "start."
 
 
-git add -A
 ## Features
 
--Timer
--Five multiple choice questions
--Correct answer display
--Ability to log and tally scores
+* Timer
+* Five multiple choice questions
+* Correct answer display
+* Ability to log and tally scores
 
 https://breeannr180.github.io/coding-quiz/
 
