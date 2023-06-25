@@ -152,7 +152,7 @@ function selectAnswer(e) {
         if (timeLeft <= 10) {
             timeLeft = 0;
         } else {
-            // If the aswer is wrong, deduct time by 10
+            // If the answer is wrong, deduct time by 10
             timeLeft -= 10;
         }
     }
@@ -195,7 +195,7 @@ function saveScore() {
     timerEl.textContent = "Time: " + timeLeft;
     setTimeout(function () {
         questionContainerEl.classList.add("hide");
-        document.getElementById("highscores").classList.remove("hide");
+        document.getElementById("score-container").classList.remove("hide");
         document.getElementById("your-score").textContent = "Your final score is " + timeLeft;
 
     }, 2000)
@@ -276,7 +276,7 @@ restartButton.addEventListener("click", function () {
 });
 
 
-// Clear localStorage items 
+// Clear localStorage 
 clearScoreButton.addEventListener("click", function () {
     localStorage.clear();
     document.getElementById("highscore").innerHTML = "";
